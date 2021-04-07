@@ -1,0 +1,65 @@
+body {
+    font-family:'VT323', 'Courier New';
+}
+
+.grid-container {
+    margin: auto;
+    display: grid;
+    width: 700px;
+    grid-template-columns: 400px auto;
+    background-color: #686868;
+    box-sizing: border-box;
+}
+
+.monitor {
+    background-color: #023612;
+    color: #1FC742;
+    font-size: 2rem;
+    padding: 10px;
+    border: 10px solid #686868;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+
+.monitor > p {
+    margin: 0px;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.panel__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #A0A0A0;
+    background-color: #F0F0F0;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+.panel__keypad {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 5px solid #A0A0A0;
+    background-color: #F0F0F0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.panel > div:nth-child(n + 15) {
+    font-size: 1.2rem;
+    line-height: 45px;
+}
+
+.panel__keypad:active, .panel__button:active {
+    background-color: #A0A0A0;
+}
